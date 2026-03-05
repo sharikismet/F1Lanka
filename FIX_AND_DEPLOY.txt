@@ -1,0 +1,71 @@
+═══════════════════════════════════════════════════════════════
+         🔧 VERCEL BUILD ERROR - QUICK FIX
+═══════════════════════════════════════════════════════════════
+
+ERROR: npm error 404 @jsr/supabase__supabase-js
+
+REASON: Vercel is trying to install Deno packages from your
+        Supabase folder. We need to ignore that folder.
+
+═══════════════════════════════════════════════════════════════
+                    ✅ THE FIX (2 COMMANDS)
+═══════════════════════════════════════════════════════════════
+
+I've created .vercelignore and vercel.json files.
+Just push them to GitHub:
+
+    git add .vercelignore vercel.json
+    git commit -m "Fix Vercel build"
+    git push
+
+Vercel will auto-redeploy in 2-3 minutes! ✅
+
+═══════════════════════════════════════════════════════════════
+                    📋 WHAT HAPPENS NEXT
+═══════════════════════════════════════════════════════════════
+
+1. You push to GitHub (command above)
+2. Vercel detects the push
+3. Vercel ignores /supabase/ folder
+4. Build succeeds
+5. Your site is LIVE!
+
+Check: https://vercel.com/dashboard → Deployments
+
+═══════════════════════════════════════════════════════════════
+                🚀 AFTER SUCCESSFUL DEPLOYMENT
+═══════════════════════════════════════════════════════════════
+
+1. Visit your live URL
+2. Click "Load Sample Products"
+3. Test WhatsApp checkout
+4. Add real products via Supabase Dashboard
+
+═══════════════════════════════════════════════════════════════
+                    ⚠️ REMEMBER: TWO PARTS
+══════════════════════════════════���════════════════════════════
+
+FRONTEND (Vercel)      → git push
+BACKEND (Supabase)     → supabase functions deploy
+
+Deploy backend separately:
+    supabase functions deploy make-server-a97df12b
+
+═══════════════════════════════════════════════════════════════
+                      📚 DETAILED GUIDES
+═══════════════════════════════════════════════════════════════
+
+VERCEL_BUILD_FIX.md          - Why this happens & full fix
+DEPLOY_NOW.md                 - Step-by-step with checks
+VERCEL_DEPLOYMENT_GUIDE.md   - Complete deployment guide
+
+═══════════════════════════════════════════════════════════════
+
+                    YOUR SITE INFO
+
+WhatsApp: +94 71 077 3717
+Email: f1lankabusiness@gmail.com
+
+Already configured! ✅
+
+═══════════════════════════════════════════════════════════════
